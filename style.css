@@ -9,19 +9,10 @@ body {
     font-style: normal;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 4.5em;
-    left:3em;
-    width: 80%;
-    height: 80%;
-    background-image: url('images/inspirationLogo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: -1;
-    opacity: .2;
+header img{
+    display: block;
+    width: 30%;
+    margin: 2em auto 1em;
 }
 
 main {
@@ -29,7 +20,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 65vh;
 }
 
 h1 {
@@ -73,15 +64,35 @@ button:hover {
     box-shadow:3px 2px 5px hsla(191, 86%, 49%, 0.5);
 }
 
+@media (min-width: 900px){
+    header img {
+        width: 30%;
+    }
+
+    main {
+        height: 75vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+        max-width: 40ch;
+    }
+
+}
+
 @media (min-width: 768px) {
-    body {
-        position: relative;
+    header img {
+        width: 20%;
     }
-    body::before {
-        position: absolute;
-        top: 7em;
-        left: 6em;
+
+    main {
+        height: 70vh;
     }
+
     h1 {
         font-size: 4rem;
     }
@@ -92,13 +103,3 @@ button:hover {
     }
 }
 
-@media (min-width: 900px){
-    body {
-        position: relative;
-    }
-    body::before {
-        position: absolute;
-        top: 7em;
-        left: 7em;
-    }
-}
