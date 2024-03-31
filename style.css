@@ -67,6 +67,7 @@ button:hover {
 @media (min-width: 900px){
     header img {
         width: 30%;
+        margin-bottom: 1em;
     }
 
     main {
@@ -87,6 +88,7 @@ button:hover {
 @media (min-width: 768px) {
     header img {
         width: 20%;
+        margin-bottom: 1em;
     }
 
     main {
